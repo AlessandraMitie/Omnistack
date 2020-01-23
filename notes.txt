@@ -1,4 +1,4 @@
-Projeto API Rest
+Projeto API Rest - Omnistack 09
 
 pasta backend: yarn init -y
 
@@ -36,6 +36,28 @@ app.get('/users', (req, res) => {
 
 *** Express lê os arquivos de forma sequencial
 
-MongoDB
-criar um servidor -> criar um Cluster
+MongoDB   omnistack/omnistack
+* criar um servidor -> criar um Cluster
 Precisa liberar o acesso para o Node
+* criar um usuário: SECURITY > Database Access
+     Read and writeto any database
+* liberar acesso ao servidor: SECURITY > Nework Access > Add IP Address > Allow access from anywhere
+Retornar para a aba Clusters > clicar em CONNECT > Connect Your Application > "DRIVER" selecionar Node.js > "VERSION" pegar a versão mais recente (caso nao conecte, pegar a 2a mais recente)
+Copiar a url de connection string
+voltar ao terminal e rodar o comando:
+yarn add mongoose
+colar o caminho (ver mongoose.connect no arquivo server.js)
+
+Mongoose é uma biblioteca que vai facilitar o trabalho com os dados do MongoDB
+
+
+Model
+inicia com letra maiúscula e no singular
+
+Insomnia -> adicionar Environments:
+na url de POST, recortar http://localhost:3333
+Menu > No Environment > Manage Environments. Em Base Environment, colar a url e salvar:
+{
+  "base_url": "http://localhost:3333"
+}
+na url de POST, antes da /, procurar por base, deverá carregar a base_url
