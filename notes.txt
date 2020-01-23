@@ -1,0 +1,41 @@
+Projeto API Rest
+
+pasta backend: yarn init -y
+
+arquivo package.json: contém todas as informações do projeto, bem como as dependências
+
+RODAR O SERVIDOR:
+pasta backend > terminal > executar para ver se a rota está funcionando: node src/server.js
+
+instalar dependência:
+yarn add nodemon -D
+
+após instalar, para rodar o servidor, apenas digitar no terminal:
+yarn dev
+
+experss é um micro framework do node, facilita na criação de rotas. não entende json
+
+métodos:
+GET: usado quando quer buscar uma informação no backend
+POST: usado quando quer criar uma info 
+PUT: usado quando quer editar uma info 
+DELETE
+
+Nomes de rotas em inglês e no plural
+
+req.query: acessar query params (para filtros)
+req.params: acessar route params (para edição, delete)
+req.body: acessar corpo da requisição (para criação, edição)
+
+app.get('/users', (req, res) => {
+    // método get
+    //enviar um objeto de propriedade message e valor Hello World
+    return res.json({ message: "Hello World" });
+
+});
+
+*** Express lê os arquivos de forma sequencial
+
+MongoDB
+criar um servidor -> criar um Cluster
+Precisa liberar o acesso para o Node
