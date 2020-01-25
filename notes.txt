@@ -61,3 +61,6 @@ Menu > No Environment > Manage Environments. Em Base Environment, colar a url e 
   "base_url": "http://localhost:3333"
 }
 na url de POST, antes da /, procurar por base, deverá carregar a base_url
+
+yarn add multer
+é uma lib
