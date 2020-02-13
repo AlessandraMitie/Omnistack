@@ -1,15 +1,15 @@
 //importar User
 const User = require('../models/User');
-
 //importar Spot
 const Spot = require('../models/Spot');
 
 module.exports = {
-    async index(req, res){
+    async index(req, res) {
     //index vai retornar uma listagem de recursos, no caso uma lista de spot
         const { tech } = req.query;
         //buscar spots somente dessa tecnologia
         const spots = await Spot.find({ techs: tech });
+        //techs é o campo dentro da model Spot
 
         return res.json(spots);
     },

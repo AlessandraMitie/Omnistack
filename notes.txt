@@ -64,3 +64,21 @@ na url de POST, antes da /, procurar por base, deverá carregar a base_url
 
 yarn add multer
 é uma lib
+
+
+
+
+
+video 20191006 142830
+33min
+
+
+FRONT END
+em um terminal, deixar rodando o comando yarn dev dentro da pasta backend
+
+
+pelo terminal do vscode, acessar a pasta frontend
+rodar o comando yarn start
+dentro da pasta public, apagar os arquivos e deixar somente o index.html
+
+começar video 20191006_161657

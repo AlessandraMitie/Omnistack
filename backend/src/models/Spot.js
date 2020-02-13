@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-//qual será a estrutura/schema de User
+//qual será a estrutura/schema de Spot
 const SpotSchema = new mongoose.Schema({
     //nome da imagem:
     thumbnail: String,
@@ -18,5 +18,5 @@ const SpotSchema = new mongoose.Schema({
 
 //exportar o módulo
 module.exports = mongoose.model('Spot', SpotSchema);
-// User é o nome do model
-// UserSchema é o segundo parâmetro
+// Spot é o nome do model
+// SpotSchema é o segundo parâmetro

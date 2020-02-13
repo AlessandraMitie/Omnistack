@@ -1,5 +1,5 @@
 // importar o model de usuário:
-const User = require('../models/user');
+const User = require('../models/User');
 
 // só pode exportar um objeto, ter apenas um método. Caso queria outro método, criar outro arquivo
 // dentro do controller temos os seguintes métodos:
