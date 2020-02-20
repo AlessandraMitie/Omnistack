@@ -88,3 +88,10 @@ pasta src -> deletar os arquivos: serviceworker, logo, index.css e app.test.js
 componente é uma função que retorna html
 
 jsx -> js + xml (sintaxe do html)
+
+
+Sempre ao incluir um código js dentro do html, escrever entre {}
+
+
+AXIOS -> ferramenta para lidar com chamadas api
+terminal -> pasta front end -> yarn add axios
