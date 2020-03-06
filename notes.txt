@@ -95,3 +95,7 @@ Sempre ao incluir um código js dentro do html, escrever entre {}
 
 AXIOS -> ferramenta para lidar com chamadas api
 terminal -> pasta front end -> yarn add axios
+
+
+React possui estados
+Estado é qualquer info que vai armazenar dentro de um componente
