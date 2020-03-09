@@ -14,8 +14,16 @@ const SpotSchema = new mongoose.Schema({
         // qual model essa informação está se referindo
         ref: 'User'
     }
+}, {
+    toJSON: {
+        virtuals: true,
+        //toda vez que um spoto for convertido em json, recalcular os virtuals automaticamente
+    }
 });
 
+SpotSchema.virtual('thumbnail_url').get(function() {
+    return `http://localhost:3333/files/${this.thumbnail}`
+})
 //exportar o módulo
 module.exports = mongoose.model('Spot', SpotSchema);
 // Spot é o nome do model

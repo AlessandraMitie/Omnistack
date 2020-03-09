@@ -99,3 +99,21 @@ terminal -> pasta front end -> yarn add axios
 
 React possui estados
 Estado é qualquer info que vai armazenar dentro de um componente
+
+instalar a dependência CORS: abrir o terminal na pasta bakend:
+yarn add cors
+controlar para evitar que a aplicação seja acessada de endereços que não quer que seja acessada
+importar o cors no arquivos server.js do backend
+
+instalar a dependência react-router-dom: abrir o terminal na pasta frontend:
+yarn add react-router-dom
+é uma biblioteca para sistema de rotas
+
+react permite criar tag vazia, chamada de fragment, que é como se fosse uma div mas não vai interferir no html
+<>
+</>
+
+
+react permite que use estilos dentro das tags em formato de objeto
+ex: <header style={{ }} />
+a primeira chave indica que quer incluir um código html, a segunda chave indica que está colocando um objeto
