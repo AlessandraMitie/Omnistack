@@ -10,7 +10,7 @@ pasta backend > terminal > executar para ver se a rota está funcionando: node s
 instalar dependência:
 yarn add nodemon -D
 
-após instalar, para rodar o servidor, apenas digitar no terminal:
+após instalar, para RODAR O SERVIDOR, apenas digitar no terminal:
 yarn dev
 
 experss é um micro framework do node, facilita na criação de rotas. não entende json
@@ -117,3 +117,41 @@ react permite criar tag vazia, chamada de fragment, que é como se fosse uma div
 react permite que use estilos dentro das tags em formato de objeto
 ex: <header style={{ }} />
 a primeira chave indica que quer incluir um código html, a segunda chave indica que está colocando um objeto
+
+
+REACT NATIVE
+
+terminal -> pasta raíz do projeto:
+yarn global add expo-cli       esperar baixar os pacotes
+expo init mobile               escolher opção blank, dar um nome para o projeto, esperar
+acessar a pasta mobile
+yarn start
+deve carregar uma página no navegador
+baixar app expo
+
+emulador android: genymotion
+
+video 191807
+
+por padrão, todas as tags no react native são display flex e flex direction column
+
+terminal > pasta mobile executar o comando:
+yarn add react-navigation
+
+é uma biblioteca bastante utilizada para navegação dentro do react native
+
+instalar o módulo gesture handler:
+terminal > pasta mobile executar o comando:
+expo install react-native-gesture-handler react-native-reanimated
+
+react-native-gesture-handler é uma biblioteca para lidar com gestos na navegação
+react-native-reanimated é uma biblioteca para lidar com animações na navegação
+
+instalar o axios para fazer toda a comunicação com o backend
+terminal > pasta mobile executar o comando:
+yarn add axios
+
+
+Estado é uma informação mantida pelo nosso componente
+
+sempre verificar o ip do expo e alterar no arquivo api.js
