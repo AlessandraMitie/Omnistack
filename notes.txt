@@ -78,7 +78,7 @@ em um terminal, deixar rodando o comando yarn dev dentro da pasta backend
 
 
 pelo terminal do vscode, acessar a pasta frontend
-rodar o comando yarn start
+rodar o COMANDO yarn start
 dentro da pasta public, apagar os arquivos e deixar somente o index.html
 
 começar video 20191006_161657
@@ -124,7 +124,7 @@ REACT NATIVE
 terminal -> pasta raíz do projeto:
 yarn global add expo-cli       esperar baixar os pacotes
 expo init mobile               escolher opção blank, dar um nome para o projeto, esperar
-acessar a pasta mobile
+ACESSAR A PASTA MOBILE
 yarn start
 deve carregar uma página no navegador
 baixar app expo
@@ -155,3 +155,5 @@ yarn add axios
 Estado é uma informação mantida pelo nosso componente
 
 sempre verificar o ip do expo e alterar no arquivo api.js
+
+cada vez que usa o map, precisa usar a propriedade key

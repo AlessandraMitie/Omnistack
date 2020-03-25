@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { View, Text, Image, AsyncStorage } from 'react-native';
+import { SafeAreaView, ScrollView, StyleSheet, Image, AsyncStorage } from 'react-native';
+
+import SpotList from '../components/SpotList';
 
 import logo from '../assets/logo.png';
 
@@ -14,5 +16,26 @@ export default function List() {
         })
     }, []);
 
-    return <Text>{techs}</Text>
+    return (
+        <SafeAreaView style={styles.container}>
+            <Image style={styles.logo} source={logo} />
+
+            <ScrollView>
+                {techs.map(tech => <SpotList key={tech} tech={tech} />)}
+            </ScrollView>
+        </SafeAreaView>
+    )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+
+    logo: {
+        height: 32,
+        resizeMode: "contain", //o conteudo da imagem ficará dentro do espaço contido
+        alignSelf: 'center',
+        marginTop: 10
+    }
+});

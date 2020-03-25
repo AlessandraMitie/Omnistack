@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
         marginBottom: 8
     },
 
-    innput: {
+    input: {
         borderWidth: 1,
         borderColor: '#ddd',
         paddingHorizontal: 20,
