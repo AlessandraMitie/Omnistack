@@ -15,9 +15,9 @@ export default function Book({ navigation }) {
             date
         }, {
             headers: { user_id }
-        })
+        });
 
-        Alert.alert('Solicitação de reserva enviada.');
+        Alert.alert('Solicitação de reserva enviada');
 
         navigation.navigate('List');
     }
@@ -44,7 +44,7 @@ export default function Book({ navigation }) {
                 <Text style={styles.buttonText}>Solicitar reserva</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity onPress={handleCancel} style={styles.button, styles.cancelButton}>
+            <TouchableOpacity onPress={handleCancel} style={[styles.button, styles.cancelButton]}>
                 <Text style={styles.buttonText}>Cancelar</Text>
             </TouchableOpacity>
         </SafeAreaView>
@@ -80,7 +80,7 @@ const styles = StyleSheet.create({
         backgroundColor:'#f05a5b',
         justifyContent: 'center',
         alignItems: 'center',
-        borderRadius: 2
+        borderRadius: 2,
     },
 
     cancelButton: {
@@ -91,6 +91,7 @@ const styles = StyleSheet.create({
     buttonText: {
         color: '#FFF',
         fontWeight: 'bold',
-        fontSize: 16
+        fontSize: 16,
+        
     }
 });

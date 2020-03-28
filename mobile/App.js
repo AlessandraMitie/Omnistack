@@ -4,8 +4,13 @@ import React from 'react';
 //componente text é um texto simples sem estilização
 //componente stylesheet
 
+import { YellowBox } from 'react-native';
 //importar as rotas:
 import Routes from './src/routes';
+
+YellowBox.ignoreWarnings([
+  'Unrecognized WebSocket'
+]);
 
 export default function App() {
   return <Routes />

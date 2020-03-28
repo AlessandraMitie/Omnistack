@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import api from '../../services/api';
 
 export default function Login({ history }) {

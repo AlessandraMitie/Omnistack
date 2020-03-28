@@ -157,3 +157,25 @@ Estado é uma informação mantida pelo nosso componente
 sempre verificar o ip do expo e alterar no arquivo api.js
 
 cada vez que usa o map, precisa usar a propriedade key
+
+213955
+
+Parar os serviços fronted e mobile
+Instalar dependência socket.io
+terminal > backend > rodar o comando:
+yarn add socket.io
+
+
+Protocolo http: protocolo assíncrono: envia uma requisição e espera uma resposta
+Protocolo websocket: Protocolo síncrono
+
+Instalar dependência socket.io-client
+terminal > frontend > rodar o comando:
+yarn add socket.io-client
+
+
+usar crase `` quando quer passar uma variável dentro
+
+abrir a pasta mobile, instalar socket io
+executar comando:
+yarn add socket.io-client

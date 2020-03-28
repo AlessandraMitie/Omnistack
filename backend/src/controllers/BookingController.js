@@ -16,6 +16,15 @@ module.exports = {
         //popular o relacionamento de spot e popular o relacionamento de usuário
         await booking.populate('spot').populate('user').execPopulate();
         //execPopulate-> executar os populates e preencher os dados de spot e usuário
+
+        //buscar uma conexão em tempo real
+        const ownerSocket = req.connectedUsers[booking.spot.user];
+
+        //se existir uma conexão em tempo real, vai enviar uma msg pra ele (to):
+        if (ownerSocket) {
+            req.io.to(ownerSocket).emit('booking_request', booking);
+        }
+
         return res.json(booking);
     }
 };
